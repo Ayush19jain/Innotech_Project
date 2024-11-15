@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="navbar-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0za3Xj-ninly6UjCkKEViZwB3z79X6d3rtJS2q9ggxw2FrXG91Ts9NFAVyfcVgeHNBY4&usqp=CAU" alt="College Logo" class="logo">
+            <h1>KIET GROUP OF INSTITUTIONS</h1>
+            
+        </div>
+       
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="notice.html">Notice</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="departments.html">Departments</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section>
+            <h2>Welcome to Our College</h2>
+            <p>Our college is a leading institution dedicated to providing high-quality education and opportunities for growth. We are committed to fostering an environment of learning, innovation, and creativity.</p>
+        </section>
+
+        <section>
+            <h2>Academic Programs</h2>
+            <p>We offer a variety of undergraduate and postgraduate programs across multiple disciplines including Science, Arts, Commerce, Engineering, and Technology. Our programs are designed to equip students with knowledge and skills for a successful career.</p>
+        </section>
+
+        <section>
+            <h2>Research and Development</h2>
+            <p>Our college is at the forefront of research and development in various fields. With state-of-the-art laboratories, experienced faculty, and partnerships with industry leaders, we provide students with ample opportunities for research and innovation.</p>
+        </section>
+
+        <section>
+            <h2>Campus Facilities</h2>
+            <p>We offer a wide range of facilities to our students, including modern libraries, fully equipped labs, sports complexes, hostels, and cafeterias. Our campus is designed to support both academic and extracurricular activities.</p>
+        </section>
+
+        <section>
+            <h2>Events and Activities</h2>
+            <p>Our college hosts numerous events throughout the year, such as cultural festivals, tech fests, sports meets, and guest lectures. These events offer students a platform to showcase their talents, network, and gain exposure to different fields.</p>
+        </section>
+
+        <section>
+            <h2>Alumni Network</h2>
+            <p>Our alumni are our pride, and they continue to achieve great heights in their respective careers. We have a strong alumni network that helps current students with mentorship and networking opportunities.</p>
+        </section>
+
+        <section>
+            <h2>Contact Information</h2>
+            <p>For admissions, inquiries, or any further information, feel free to contact us at:</p>
+            <ul>
+                <li>Email: contact@ourcollege.edu</li>
+                <li>Phone: (123) 456-7890</li>
+                <li>Address: 123 College Road, City, State, ZIP</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 KIET. All rights reserved.</p>
+    </footer>
+    <script>
+        const images = [
+            'images/kietimg1.jpg.png',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZpAtWDPceTLkimMbqpjYA2d7AVsErHohXxw&s',
+            'https://images.unsplash.com/photo-1591710110747-dfeae9fa762a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            'https://www.kiet.edu/kiet/assets/frontend/img/auditorium-img2.jpg',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj26Jf3NEfogPZoHei_wK_RoSgDA3feBBIYg&s'
+        ];
+        let currentIndex = 0;
+
+        function changeBackground() {
+            document.body.style.backgroundImage = `url(${images[currentIndex]})`;
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        // Change background every 5 seconds
+        setInterval(changeBackground, 5000);
+
+        // Initial background setup
+        changeBackground();
+    </script>
+</body>
+</html>
